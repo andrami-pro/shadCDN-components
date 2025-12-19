@@ -2,7 +2,7 @@
   "name": "ui-kit",
   "version": "0.0.1",
   "scripts": {
-    "build": "weweb build",
+    "build": "npm run build:react && weweb build",
     "build:react": "babel src --out-dir src/dist --presets @babel/preset-react --copy-files --extensions \".js,.jsx\" --ignore \"src/dist\",\"src/wwElement.vue\",\"src/ww-config.js\"",
     "watch:react": "babel src --out-dir src/dist --presets @babel/preset-react --copy-files --extensions \".js,.jsx\" --ignore \"src/dist\",\"src/wwElement.vue\",\"src/ww-config.js\" --watch",
     "serve": "weweb serve"
